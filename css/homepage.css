@@ -1,0 +1,281 @@
+/*******************************
+            Global
+*******************************/
+
+html,
+body {
+  font-size: 15px;
+  height: 100%;
+}
+
+body {
+  font-family: "微软雅黑", sans-serif;
+  background: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+}
+
+/***************滚动条样式******************/
+::-webkit-scrollbar {
+width:10px;
+}
+
+::-webkit-scrollbar-track {
+-webkit-box-shadow:0 0 1px #000;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: #222;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+background: #999;
+}
+
+/*******************************
+          UI Overrides
+*******************************/
+
+.ui.header {
+  font-family: "微软雅黑", sans-serif;
+}
+
+.ui.header,
+h1,
+h2 {
+  font-weight: normal !important;
+}
+
+h1.ui.header {
+  font-size: 2.2em;
+}
+
+h4.ui.header,
+h5.ui.header,
+.ui.icon.header {
+  font-weight: bold !important;
+}
+
+.ui.button {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a {
+  color: #009FDA;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00BAFF;
+}
+
+p a {
+  font-weight: bold;
+}
+
+/*******************************
+            Global
+*******************************/
+
+.menu .right.menu > .mobile.item {
+  display: none;
+}
+
+.ui.page.grid.segment {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.masthead.segment.inverted {
+  background-image: url(../images/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 0em;
+  padding-top: 4rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
+  box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
+}
+
+.masthead.segment .column {
+  position: relative;
+}
+
+.masthead.segment .information {
+  margin: 3em 1em 1em 280px;
+}
+
+.masthead.segment .information p {
+  max-width: 600px;
+  margin: 0em 0px 2em 0em;
+  font-size: 1.2em;
+}
+
+.masthead.segment h1.ui.header .sub {
+  font-size: 0.7em;
+}
+
+.masthead.segment .image {
+  position: absolute;
+  left: 0%;
+  bottom: -110px;
+}
+
+.overview .divided.grid .header + p {
+  min-height: 100px;
+}
+
+.ui.shape .icon,
+.link.list .icon {
+  margin: 0em;
+  padding: 0em;
+}
+
+.ui.cube.shape .side {
+  background-color: transparent;
+}
+
+.intro p{
+line-height:2em;
+}
+#nav .menu{
+background:#222;
+}
+#process{
+background:#000;
+color:#eee;
+}
+#process i.circular.icon{
+-webkit-box-shadow: 0em 0em 0em 0.1em rgba(255, 255, 255, 1) inset;
+box-shadow: 0em 0em 0em 0.1em #fff inset;
+}
+#process{
+    background-image:url(../images/tree.png);
+    background-repeat:no-repeat;
+    background-position:20% 150px;
+    height:690px;
+}
+#process .eleven h3>div{
+color:#fff;
+} 
+#process .eleven h3{
+position:relative;
+z-index:10;
+width:40%;
+}
+#process .eleven h3:first-child{
+     left:20%;
+}
+#process .eleven h3:nth-child(2){
+    top:90px;
+    left:0;
+}
+#process .eleven h3:nth-child(3){
+    top:-50px;
+    left:270px;
+}
+#process .eleven h3:nth-child(4){
+    top:80px;
+    left:-40px;
+}
+#process .eleven h3:nth-child(5){
+    top:20px;
+    left:320px;
+}
+#process .eleven h3:nth-child(6){
+    top:80px;
+    left:0;
+}
+#process .eleven h3:nth-child(7){
+    top:30px;
+    left:260px;
+}
+#apply .six p{
+line-height:1.5em;
+}
+/*******************************
+          Responsive
+*******************************/
+
+/* Mobile Only */
+
+@media only screen and (max-width : 768px) {
+  .ui.page.grid.segment {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .menu .right.menu > .item {
+    display: none;
+  }
+
+  .menu .right.menu > .mobile.item {
+    display: block;
+  }
+
+  h1.ui.header {
+    font-size: 1.5em;
+  }
+
+  .masthead.segment {
+    -webkit-background-size: auto;
+    background-size: auto;
+  }
+
+  .masthead.segment .information {
+    margin-left: 190px;
+  }
+
+  .masthead.segment .image {
+    bottom: -65px;
+    width: 150px;
+  }
+
+  .masthead.segment .button {
+    font-size: 1rem;
+  }
+
+  .overview .divided.grid .header .icon {
+    font-size: 1.5em;
+  }
+
+  .overview .divided.grid .header + p {
+    min-height: 0px;
+  }
+
+  .masthead.segment .column {
+    font-size: 0.7rem;
+  }
+
+  .masthead.segment .column p {
+    display: none;
+  }
+
+  .selection.list .right.floated {
+    display: none;
+  }
+
+ #process{
+   background-image:none;
+ }
+ #process .eleven h3:nth-child(n){
+    left:0;
+    top:0;
+    width:100%;
+ }
+ 
+}
+
+@media only screen and (max-width : 1000px) {
+
+}
